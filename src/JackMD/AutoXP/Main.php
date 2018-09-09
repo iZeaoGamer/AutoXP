@@ -51,8 +51,8 @@ class Main extends PluginBase implements Listener{
 	    if($event->isCancelled()){
 	        return;
         }
-		$event->getPlayer()->addXp($event->getXpDropAmount());
-		$event->setXpDropAmount(0);
+		$event->getPlayer()->addXp($event->getPlayer()->getXpDropAmount());
+		$event->getPlayer()->setXpDropAmount(0);
 	}
 
 
